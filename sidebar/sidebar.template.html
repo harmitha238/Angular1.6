@@ -1,0 +1,8 @@
+<div class="sidebar">
+  <ul class="list-group">
+    <li ng-click="getPerson({name:person.name})" ng-repeat="person in people | filter:{name:search}" class="list-group-item pointer">
+      <img src="{{person.img}}" alt="{{person.name}}" />
+      {{person.name}}
+    </li>
+  </ul>
+</div>
